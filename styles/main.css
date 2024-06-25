@@ -6,7 +6,14 @@
     text-decoration: none;
 }
 
+
+
 /* header section start */
+
+    header{
+        width: 100%;
+        max-width: 1640px;
+    }
 
     nav{
         font-family: 'Inter', 'sans-serif';
