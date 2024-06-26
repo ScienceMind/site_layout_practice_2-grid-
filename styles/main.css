@@ -6,25 +6,37 @@
     text-decoration: none;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 /* header section start */
 
     header{
-        width: 100%;
-        max-width: 1640px;
+        max-width: 1415px;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        margin-top: 40px;
+        margin-bottom: 80px;
     }
 
     nav{
         font-family: 'Inter', 'sans-serif';
         font-size: 16px;
         font-weight: 400;
-        display: grid;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     nav a {
         display: block;
         color: #B8BECD;
+        margin-right: 34px;
     }
 
     nav a:hover{
@@ -42,6 +54,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: 18px;
     }
 
     .login-button:hover{
@@ -69,3 +82,80 @@
     }
 
 /* header section end */
+
+/* main section start */
+
+    main{
+        max-width: 1415px;
+        width: 80%;
+    }
+
+    /** section styling start **/
+
+        .section-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .section-description-container h2{
+            font-family: 'Playfair Display', 'sans-serif';
+            font-weight: 700;
+            font-size: 64px;
+            color: #202336;
+            margin-top: 33px;
+        }
+
+        .section-description-container h3{
+            font-family: 'Inter', 'sans-serif';
+            font-weight: 600;
+            font-size: 22px;
+            color: #202336;
+            margin-top: 74px;
+            margin-bottom: 21px;
+        }
+
+        .line{
+            width: 32px;
+            height: 0px;
+            border: 1px solid #202336;
+            border-radius: 4px;
+            margin-bottom: 48px;
+        }
+
+        .image-container-1 {
+            max-width: 687px;
+            max-height: 654px;
+        }
+
+        .dropdown-menus-container{
+            max-width: 471px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 35px;
+        }
+
+        .dropdown-menus-container select {
+            height: 52px;
+            border: 0.8px solid #AFB0B9;
+            border-radius: 6px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .orange-button{
+            width: 180px;
+            height: 52px;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            background-color: #FB8F1D;
+            font-family: 'Mulish', 'sans-serif';
+            font-weight: 700;
+            font-size: 17px;
+
+        }
+
+    /** section styling end **/
+
+/* main section end */
