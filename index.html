@@ -28,17 +28,18 @@
         <a href="">Destinations</a>
         <a href="">About</a>
         <a href="">Partner</a>
-        <div class="login-button">Login</div>
-        <div class="register-button">Register</div>
+        <button class="orange-button" id="login-button">Login</button>
+        <button class="orange-button" id="register-button">Register</button>
       </nav>
     </header>
     <main>
       <section class="section-1">
         <div class="section-description-container">
-          <h2>Explore and<br />Travel</h2>
-          <div>
-            <h3>Holiday finder</h3>
+          <div class="section-title-container">
+            <h2>Explore and<br />Travel</h2>
+            <img class="plus-image" src="/img/element3.png" alt="plus image" />
           </div>
+          <h3>Holiday finder</h3>
           <div class="line"></div>
           <div class="dropdown-menus-container">
             <select name="location" id="location">
@@ -66,14 +67,20 @@
               <option value="expert">Expert</option>
               <option value="extreme">Extreme</option>
             </select>
-            <select name="date" id="date">
-              <option value="date-select" hidden selected>Date</option>
-              <option value="calendar">
-                <input type="date" id="date-picker" />
-              </option>
+            <select name="date-picker" id="date-picker">
+              <option value="date" hidden selected>Date</option>
+              <option value="sunday">Sunday</option>
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
             </select>
           </div>
-          <button class="orange-button">Explore</button>
+          <button class="orange-button" id="explore-orange-button">
+            Explore
+          </button>
         </div>
         <div class="image-container-1">
           <img src="/img/thousand-01 1.png" alt="traveller image" />

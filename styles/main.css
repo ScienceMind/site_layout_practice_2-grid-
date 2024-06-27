@@ -43,43 +43,15 @@ body{
         color: #202336;
     }
 
-    .login-button {
+    nav button{
         width: 132px;
         height: 44px;
-        border: 1px solid #FB8F1D;
-        border-radius: 8px;
-        color: #FB8F1D;
-        font-size: 15px;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    }
+
+    #login-button{
         margin-right: 18px;
     }
-
-    .login-button:hover{
-        background-color: #FB8F1D;
-        color: white;
-    }
-
-    .register-button {
-        width: 132px;
-        height: 44px;
-        border: 1px solid #FB8F1D;
-        border-radius: 8px;
-        background-color: #FB8F1D;
-        color: white;
-        font-size: 15px;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .register-button:hover{
-        background-color: white;
-        color: #FB8F1D;
-    }
+    
 
 /* header section end */
 
@@ -95,6 +67,26 @@ body{
         .section-1 {
             display: grid;
             grid-template-columns: 1fr 1fr;
+        }
+
+        .section-title-container{
+            display: flex;
+        }
+        .plus-image{
+            width: 20px;
+            height: 20px;
+            margin-top: 55px;
+            margin-left: 112px;
+            animation: rotate 8s linear infinite;
+        }
+
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
         }
 
         .section-description-container h2{
@@ -129,6 +121,7 @@ body{
 
         .dropdown-menus-container{
             max-width: 471px;
+            margin-bottom: 51px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 30px;
@@ -140,12 +133,25 @@ body{
             border: 0.8px solid #AFB0B9;
             border-radius: 6px;
             padding-left: 30px;
-            padding-right: 30px;
+            color: #4A4C53;
+            font-family: 'Inter', 'sans-serif';
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        #date-picker{
+            border: 0.8 solid #AFB0B9;
+            border-radius: 6px;
+            padding-left: 30px;
+            font-family: 'Inter', 'sans-serif';
+            font-weight: 400;
+            font-size: 15px;
         }
 
         .orange-button{
             width: 180px;
             height: 52px;
+            border: 1px solid #FB8F1D;
             border-radius: 8px;
             border: none;
             color: white;
@@ -153,8 +159,16 @@ body{
             font-family: 'Mulish', 'sans-serif';
             font-weight: 700;
             font-size: 17px;
-
+            transition: background-color 0.5s ease, color 0.5s ease;
         }
+
+        .orange-button:hover{
+            background-color: white;
+            color: #FB8F1D;
+            border: 1px solid #FB8F1D;
+            border-radius: 8px;
+        }
+
 
     /** section styling end **/
 
