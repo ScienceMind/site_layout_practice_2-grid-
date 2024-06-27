@@ -37,13 +37,10 @@ body{
         display: block;
         color: #B8BECD;
         margin-right: 34px;
+        transition: color 0.3s ease;
     }
 
-    nav a:hover{
-        color: #202336;
-    }
-
-    nav button{
+    nav button {
         width: 132px;
         height: 44px;
     }
@@ -52,6 +49,9 @@ body{
         margin-right: 18px;
     }
     
+    nav a:hover {
+        color: #202336;
+    }
 
 /* header section end */
 
@@ -77,16 +77,7 @@ body{
             height: 20px;
             margin-top: 55px;
             margin-left: 112px;
-            animation: rotate 8s linear infinite;
-        }
-
-        @keyframes rotate{
-            from{
-                transform: rotate(0deg);
-            }
-            to{
-                transform: rotate(360deg);
-            }
+            animation: rotate-plus 8s linear infinite;
         }
 
         .section-description-container h2{
@@ -139,15 +130,6 @@ body{
             font-size: 15px;
         }
 
-        #date-picker{
-            border: 0.8 solid #AFB0B9;
-            border-radius: 6px;
-            padding-left: 30px;
-            font-family: 'Inter', 'sans-serif';
-            font-weight: 400;
-            font-size: 15px;
-        }
-
         .orange-button{
             width: 180px;
             height: 52px;
@@ -162,6 +144,15 @@ body{
             transition: background-color 0.5s ease, color 0.5s ease;
         }
 
+        #date-picker {
+            border: 0.8 solid #AFB0B9;
+            border-radius: 6px;
+            padding-left: 30px;
+            font-family: 'Inter', 'sans-serif';
+            font-weight: 400;
+            font-size: 15px;
+        }
+
         .orange-button:hover{
             background-color: white;
             color: #FB8F1D;
@@ -169,6 +160,15 @@ body{
             border-radius: 8px;
         }
 
+        @keyframes rotate-plus {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
 
     /** section styling end **/
 
