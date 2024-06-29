@@ -37,7 +37,7 @@ body{
         display: block;
         color: #B8BECD;
         margin-right: 34px;
-        transition: color 0.3s ease;
+        transition: color 0.3s ease-in-out;
     }
 
     nav button {
@@ -62,7 +62,7 @@ body{
         width: 80%;
     }
 
-    /** section styling start **/
+    /** section-1 styling start **/
 
         .section-1 {
             display: grid;
@@ -106,10 +106,8 @@ body{
 
         .ring-image{
             position: relative;
-            right: 85px;
             width: 25px;
             height: 25px;
-            margin-bottom: 23px;
             animation: pulsing-ring 8s infinite ease-in-out;
         }
 
@@ -117,7 +115,7 @@ body{
             max-width: 687px;
             max-height: 654px;
         }
-
+        
         .dropdown-menus-container{
             max-width: 471px;
             margin-bottom: 51px;
@@ -149,7 +147,17 @@ body{
             font-family: 'Mulish', 'sans-serif';
             font-weight: 700;
             font-size: 17px;
-            transition: background-color 0.5s ease, color 0.5s ease;
+            transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+        }
+
+        #ring-image-1{
+            right: 85px;
+            margin-bottom: 23px;
+        }
+
+        #ring-image-2{
+            left: 362px;
+            top: 62px;
         }
 
         #date-picker {
@@ -190,6 +198,96 @@ body{
             }
         }
 
-    /** section styling end **/
+    /** section-1 styling end **/
+
+    /** section-2 styling start **/
+
+        .section-2{
+            margin-top: 270px;
+            grid-template-columns: auto auto 1fr;
+        }
+
+        .section-2 h3{
+            font-family: 'Playfair Display', 'sans-serif';
+            font-weight: 700;
+            font-size: 36px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .section-2 p{
+            font-family: 'Mulish', sans-serif;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 30px;
+            margin-bottom: 40px;
+        }
+
+        .image-container-2{
+            margin-top: 16px;
+        }
+
+        .section-description-container-2 {
+            margin-left: 54px;
+            margin-top: 96px;
+            max-width: 450px;
+        }
+
+        #plus-image-2{
+            margin-top: 0px;
+            margin-left: 26px;
+        }
+
+        #ring-image-3{
+            margin-left: 163px;
+            margin-bottom: 25px;
+        }
+
+    /** section-2 styling end **/
+
+    /** section-3 styling start **/
+
+        .section-3{
+            margin-top: 262px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+        }
+
+        .destinations-header{
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+        }
+
+        .destinations-header h3{
+            font-family: 'Playfair Display', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 50px;
+            color: #000;
+        }
+
+        .view-all-button{
+            margin-right: 135px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: #FB8F1D;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 60px;
+        }
+
+        .arrow{
+            margin-left: 10px;
+        }
+
+
+        #ring-image-4{
+            margin-right: 92px;
+            margin-top: -20px;
+        }
+
+    /** section-3 styling end **/
 
 /* main section end */
