@@ -250,7 +250,12 @@ body{
         .section-3{
             margin-top: 262px;
             display: grid;
-            grid-template-columns: auto 1fr;
+            grid-template-columns: min-content 1fr;
+            grid-template-rows: auto auto;
+        }
+
+        .destinations-section-container{
+
         }
 
         .destinations-header{
@@ -282,10 +287,70 @@ body{
             margin-left: 10px;
         }
 
+        .destinations-images-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 25px;
+            margin-top: 50px;
+            margin-right: 120px;
+        }
+
+        .destination-image-container{
+            position: relative;
+            z-index: 1;
+        }
+
+        .destination-image-container img{
+            /* display: block; */
+            width: 100%;
+            max-width: 261px;
+            height: 100%;
+            max-height: 332px;
+            border-radius: 8px 8px 8px 0px;
+        }
+
+        .destination-description-container{
+            position: absolute;
+            z-index: 2;
+            padding-top: 11px;
+            padding-left: 0px;
+            left: 0px;
+            bottom: 0px;
+            width: 120px;
+            height: 56px;
+            background-color: white;
+            border-radius: 0px 6px 0px 0px;
+        }
+
+        .destination-name{
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 25px;
+            color: #042521;
+        }
+
+        .destination-country{
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 24px;
+            color: #042521;
+        }
+
+        #plus-image-4{
+            margin: 330px 96px 0px 0px;
+        }
 
         #ring-image-4{
             margin-right: 92px;
             margin-top: -20px;
+        }
+
+        #ring-image-5{
+            grid-column: span 2;
+            margin-top: 40px;
+            margin-left: 45%;
         }
 
     /** section-3 styling end **/
