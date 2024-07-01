@@ -75,8 +75,6 @@ body{
         .plus-image{
             width: 20px;
             height: 20px;
-            margin-top: 55px;
-            margin-left: 112px;
             animation: rotate-plus 8s linear infinite;
         }
 
@@ -148,6 +146,11 @@ body{
             font-weight: 700;
             font-size: 17px;
             transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+        }
+
+        #plus-image-1{
+            margin-top: 55px;
+            margin-left: 112px;
         }
 
         #ring-image-1{
@@ -254,9 +257,6 @@ body{
             grid-template-rows: auto auto;
         }
 
-        .destinations-section-container{
-
-        }
 
         .destinations-header{
             display: grid;
@@ -354,5 +354,63 @@ body{
         }
 
     /** section-3 styling end **/
+
+    /** section-4 styling start **/
+
+        .section-4{
+            margin-top: 173px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .section-description-container-3{
+            margin-left: 116px;
+            display: flex;
+            flex-direction: column;
+            width: 480px;
+        }
+
+        .section-description-container-3 h3{
+            margin-top: 50px;
+            font-family: 'Playfair Display', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 50px;
+            color: #000;
+        }
+
+        .section-description-container-3 p{
+            margin-top: 20px;
+            margin-bottom: 40px;
+            max-width: 450px;
+            font-family: 'Mulish', sans-serif;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 30px;
+            color: #7D7987;
+        }
+
+        .image-container-3{
+            margin-left: 50px;
+            max-height: 542px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #ring-image-6{
+            margin-top: 85px;
+            margin-left: 45px;
+        }
+
+        #plus-image-5{
+            margin-left: 250px;
+        }
+
+        #plus-image-6{
+            margin-top: 37px;
+            margin-left: 58px;
+        }
+
+    /** section-4 styling end **/
 
 /* main section end */
