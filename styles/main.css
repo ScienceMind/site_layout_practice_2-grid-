@@ -413,4 +413,59 @@ body{
 
     /** section-4 styling end **/
 
+    /** section-5 styling start **/
+
+        .section-5{
+            margin-top: 250px;
+        }
+
+        .section-description-container-4{
+            margin-left: 116px;
+            max-width: 450px;
+        }
+
+        .section-description-container-4 h3{
+            font-family: 'Playfair Display', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 50px;
+            color: #000;
+        }
+
+        .stars-images-container{
+            margin-top: 145px;
+            display: grid;
+            grid-template-columns: min-content min-content min-content min-content min-content;
+            grid-column-gap: 16px;
+        }
+
+        .comment{
+            margin-top: 30px;
+            font-family: 'Mulish', sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: #000;
+        }
+
+        .name{
+            margin-top: 40px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 48px;
+            color: #000;
+        }
+
+        .occupation{
+            margin-top: 0px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 48px;
+            color: #000;
+        }
+
+    /** section-5 styling end **/
+
 /* main section end */
